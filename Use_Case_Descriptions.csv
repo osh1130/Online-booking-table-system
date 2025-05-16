@@ -1,0 +1,11 @@
+Use Case,Brief Use Case Description
+Register/Login,User enters credentials or registration info; the system verifies identity and grants access.
+Search Restaurant Branch,User selects location or city; the system displays matching restaurant branches.
+View Table Availability,User selects a branch and date/time; the system shows available tables.
+Book Table / Make Reservation,"User selects a table and time slot, system verifies availability and creates a reservation record."
+Verify Table Availability,System checks if the selected table is available at the requested time and date.
+Make Payment,User selects payment method and initiates payment; system proceeds to process it.
+Online Payment,System interacts with external payment gateway and processes the payment.
+Confirmation of Payment,System receives response from gateway and confirms success or failure of transaction.
+Cancel Booking,User selects a reservation to cancel; system updates status and notifies admin.
+Approve/Reject Booking,"Admin views pending bookings, makes decision to approve or reject, system updates status."
