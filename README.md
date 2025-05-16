@@ -1,54 +1,49 @@
 # Online Booking Table System
 
-This is an object-oriented project for a restaurant **Online Booking Table System**. It allows customers to reserve tables at a restaurant, make payments online, and manage bookings. Admin users can review and approve or reject bookings. The system also integrates use case and class modeling in UML.
+This is an object-oriented restaurant reservation system that allows customers to search branches, view available tables, book reservations, and make online payments. Admin users can approve or reject bookings. The system demonstrates clean UML modeling with interface usage and multi-branch support.
 
 ---
 
-## 📌 Project Features
+## 📌 Features
 
-### 👤 For Customers
-- Register and Login
-- Search restaurant branches
-- View table availability
-- Book a table / make a reservation
-- Make online payment
-- Cancel booking
+### 👤 Customer Functions
+- Register and login
+- Search restaurant branches by city
+- View available tables by time
+- Make table reservations
+- Make online payments
+- Cancel reservations
 
-### 🛠️ For Admins
-- View booking requests
+### 🛠️ Admin Functions
+- View and manage booking requests
 - Approve or reject bookings
 - Confirm payment status
 
 ---
 
-## 🧩 UML Diagrams
+## 🧩 UML Design
 
-### ✅ Use Case Diagram
+### Use Case Diagram
 - Actors: `Customer`, `Admin`
-- Core Use Cases:
-  - Book Table / Make Reservation
+- Key Use Cases:
+  - Book Table → Verify Availability
   - Make Payment → Online Payment → Confirm Payment
   - Cancel Booking → Approval Workflow
-  - Includes: `Verify Table Availability`, `Approve/Reject Booking`
 
-### ✅ Class Diagram
-Includes:
-- `User` (abstract base class)
-- `Customer` / `Admin` (inherit from User)
-- `Table`
-- `Booking`
-- `Payment`
-
-Key relationships:
-- One Customer can have many Bookings and Payments
-- Booking is linked to one Table and one Payment
+### Class Diagram Highlights
+- Abstract base class: `User`
+- Subclasses: `Customer`, `Admin`
+- `Table` belongs to a `Branch`
+- `Booking` links a `Customer`, `Table`, and `Payment`
+- `Branch` supports location-based search
+- Interfaces: `IBookable`, `IPaymentProcessor` for extendable behavior
 
 ---
 
-## 🧠 Key Concepts Demonstrated
+## 🧠 Concepts Demonstrated
 
-- Object-oriented design (inheritance, relationships)
-- UML modeling: Use Case + Class Diagram
-- Software engineering principles (LO3, LO4, LO5)
-- Agile sprint alignment & documentation
-- Culturally informed teamwork and system considerations
+- Object-oriented principles (inheritance, association, abstraction)
+- Interface design for flexible extension
+- Multi-branch restaurant modeling
+- UML diagrams: Use Case + Class Diagram
+- Alignment with agile methodology and cultural inclusiveness (LO3–LO5)
